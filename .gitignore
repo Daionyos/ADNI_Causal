@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+.Python
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Data files (patient data, ADNI/MIMIC, local ontology embeddings)
+data/**
+!data/
+!data/README.md
+
+# Ontology embeddings (large binary files)
+data/ontology_emb/ontology.embeddings
+data/ontology_emb/ontology.embeddings.syn1neg.npy
+data/ontology_emb/ontology.embeddings.wv.vectors.npy
+
+# Embeddings folder contents (keep folder, ignore files)
+embeddings/*
+!embeddings/.gitkeep
+
+# GAN model pickles (large binary outputs)
+output/**/*.pkl
+
+# Synthetic output CSVs
+output/**/*.csv
+
+# Evaluation output images
+output/**/*.png
+
+# Markdown summaries in output/
+output/**/*.md
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# API keys / secrets
+.env
+*.env
+secrets.py
+api_keys.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+log_file*
+
+# Output and test artifacts
+output/**
+!output/
+!output/README.md
+tmp/
+results/summary/*.csv
+
+# Local context files
+README_for_*.md
+docs/thesis_draft*.tex
+docs/thesis_final_reviewed.tex
+docs/figures/*.png
+docs/thesis/
+docs/adni_*.md
+scripts/create_thesis_quality_figures.py
+scripts/run_resit_aligned_experiments.py
+scripts/summarize_resit_aligned_experiments.py
+scripts/run_missing_expanded_bootstrap_notears.ps1
+scripts/run_remaining_expanded_causal.ps1
+results/
+
+# Local tool config
+.claude/
+.codex
+.codex/
