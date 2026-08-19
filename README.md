@@ -4,6 +4,8 @@ This repository contains the code used to reproduce the cross-sectional ADNI syn
 
 Raw ADNI data are not included. To run the pipeline, place `ADNIMERGE.csv` in `data/`.
 
+The `src/onto_cgans/` package is adapted from the Onto-CGAN implementation by Sun Chang and is redistributed under the MIT license included in `LICENSE.txt`. The ADNI preprocessing, benchmarking, holdout utility, and causal-evaluation scripts were added for this project.
+
 ## Data Preprocessing
 
 The pipeline uses baseline ADNI visits only (`VISCODE == "bl"`), with one row per participant when `RID` is available. Diagnosis labels are mapped to three classes: CN, MCI, and AD. Numeric fields are cleaned before imputation, including ADNI values such as `>1700`. Numeric missing values are median-imputed after dropping columns with more than 60% missingness.
